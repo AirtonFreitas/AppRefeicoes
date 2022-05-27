@@ -1,6 +1,6 @@
 # refeicoes
 
-A new Flutter project.
+Aplicativo desenvolvido com o objetivo de aprender e me aprofundar mais em conceitos como Navegação e Multiplas telas usando Flutter / Dart. 
 
 ## Getting Started
 
