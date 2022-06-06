@@ -7,7 +7,10 @@ class MealDetailScreen extends StatelessWidget {
       margin: EdgeInsets.symmetric(vertical: 10),
       child: Text(
         title,
-        style: Theme.of(context).textTheme.headline6,
+        style: Theme
+            .of(context)
+            .textTheme
+            .headline6,
       ),
     );
   }
@@ -29,7 +32,10 @@ class MealDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final meal = ModalRoute.of(context)?.settings.arguments as Meal;
+    final meal = ModalRoute
+        .of(context)
+        ?.settings
+        .arguments as Meal;
 
     return Scaffold(
       appBar: AppBar(
@@ -57,7 +63,9 @@ class MealDetailScreen extends StatelessWidget {
                           vertical: 5, horizontal: 10),
                       child: Text(meal.ingredients[index]),
                     ),
-                    color: Theme.of(context).accentColor,
+                    color: Theme
+                        .of(context)
+                        .accentColor,
                   );
                 },
               ),
@@ -83,6 +91,11 @@ class MealDetailScreen extends StatelessWidget {
           ],
         ),
       ),
-    );
+      floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.star),
+          onPressed: (){
+    Navigator.of(context).pop(meal.title);
+    },
+    ),);
   }
 }

@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import '../components/main_drawer.dart';
 
 class SettingsScreen extends StatelessWidget {
+
+  Widget _createSwitch(String title){
+
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -8,6 +13,7 @@ class SettingsScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Configurações'),
       ),
+      drawer: MainDrawer(),
       body: Center(
         child: Text('Configurações'),
       ),
