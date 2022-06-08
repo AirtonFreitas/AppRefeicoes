@@ -8,5 +8,5 @@ class Settings{
      this.isLactoseFree = false,
      this.isVegan = false,
      this.isVegetarian = false,
-   })
+   });
 }
